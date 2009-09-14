@@ -22,7 +22,7 @@ module TTFunk
     end
 
     def exists?
-      !@offset.nil?
+      defined?(@offset) && !@offset.nil?
     end
 
     def raw
